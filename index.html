@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Shreeji Girls PG, Thaltej, Ahmedabad</title>
+<meta name="description" content="Safe and comfortable girls PG in Thaltej, Ahmedabad. View photos, rules, location and pay your rent online.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🏠</text></svg>">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="nav" id="top">
+  <a class="brand" href="#home">Shreeji Girls PG</a>
+  <button class="burger" aria-label="Open menu" aria-expanded="false" aria-controls="menu"><span></span><span></span><span></span></button>
+  <nav id="menu">
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#rules">Rules</a>
+    <a href="#location">Location</a>
+    <a href="#payment" class="pay-link">Pay rent</a>
+  </nav>
+</header>
+
+<main>
+<section id="home" class="hero">
+  <div class="hero-text">
+    <p class="kicker">Thaltej, Ahmedabad</p>
+    <h1>A safe, homely stay for girls.</h1>
+    <p>Shreeji Girls PG offers clean rooms, home-style meals and a secure building, close to colleges and offices in Thaltej.</p>
+    <div class="actions">
+      <a class="btn ghost" href="#payment">Pay rent</a>
+    </div>
+  </div>
+  <div class="hero-imgs">
+    <figure class="ph big"><img src="images/home-1.jpg" alt="Shreeji Girls PG building" onerror="this.remove()"></figure>
+    <figure class="ph"><img src="images/home-2.jpg" alt="Bedroom at Shreeji Girls PG" onerror="this.remove()"></figure>
+    <figure class="ph"><img src="images/home-3.jpg" alt="Dining area at Shreeji Girls PG" onerror="this.remove()"></figure>
+  </div>
+</section>
+
+<section id="about" class="sec">
+  <h2>About us</h2>
+  <div class="about-grid">
+    <p>Shreeji Girls PG is a girls-only paying guest accommodation in Thaltej, Ahmedabad. We host students and working women who want a safe place to live with the comforts of home.</p>
+    <ul class="ticks">
+      <li>Girls-only building with CCTV and a caretaker</li>
+      <li>Furnished rooms with cupboards and study tables</li>
+      <li>Home-style vegetarian meals</li>
+      <li>Wi-Fi, laundry, RO water and power backup</li>
+      <li>Easy access to SG Highway, colleges and offices</li>
+    </ul>
+  </div>
+</section>
+
+<section id="gallery" class="sec alt">
+  <h2>Gallery</h2>
+  <div class="grid" id="galleryGrid"></div>
+</section>
+
+<section id="rules" class="sec">
+  <h2>Rules and policies</h2>
+  <ol class="rules">
+    <li><b>Girls only.</b> Male visitors are not allowed inside rooms or the building.</li>
+    <li><b>Gate timing.</b> The gate closes at 10:00 PM. Please inform the caretaker in advance if you will be late.</li>
+    <li><b>Rent.</b> Pay rent by the 5th of every month. Late payment may attract a fee.</li>
+    <li><b>Security deposit.</b> Refundable at check-out after room inspection, within 15 days.</li>
+    <li><b>Notice period.</b> Give 30 days' notice before leaving. Otherwise one month's rent is deducted.</li>
+    <li><b>No smoking, alcohol or drugs</b> on the premises.</li>
+    <li><b>Cleanliness.</b> Keep your room and common areas tidy. Switch off lights, fans and AC when not in use.</li>
+    <li><b>Property.</b> Damage to furniture or fittings will be charged to the resident.</li>
+    <li><b>Valuables.</b> Residents are responsible for their own belongings.</li>
+    <li><b>Respect.</b> Keep noise low after 10:00 PM and treat everyone with courtesy.</li>
+  </ol>
+</section>
+
+<section id="location" class="sec alt">
+  <h2>Location</h2>
+  <p class="lead">Thaltej, Ahmedabad, Gujarat</p>
+  <div class="map">
+    <iframe title="Shreeji Girls PG on Google Maps" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+      src="https://www.google.com/maps?q=ShreejiGirlsPG,Thaltej,Ahmedabad&output=embed"></iframe>
+  </div>
+  <a class="btn" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Shreeji+Girls+PG+Thaltej+Ahmedabad">Open in Google Maps</a>
+</section>
+
+<section id="payment" class="sec pay">
+  <h2>Pay your rent</h2>
+  <p class="lead">Enter your application number to see your pending rent and the payment QR code.</p>
+  <form id="payForm" autocomplete="off" novalidate>
+    <label for="appNo">Application number</label>
+    <div class="row">
+      <input id="appNo" name="appNo" type="text" inputmode="text" placeholder="e.g. SGP9999NAME" required>
+      <button class="btn" type="submit">Check</button>
+    </div>
+    <p id="err" class="err" role="alert" hidden></p>
+  </form>
+
+  <div id="result" class="result" hidden>
+    <dl>
+      <div><dt>Name</dt><dd id="rName"></dd></div>
+      <div><dt>Date of birth</dt><dd id="rDob"></dd></div>
+      <div><dt>Rent pending</dt><dd id="rRent" class="amt"></dd></div>
+    </dl>
+    <div id="qrBox" class="qr">
+      <img id="qrImg" src="images/payment-qr.png" alt="Payment QR code" onerror="this.alt='Add images/payment-qr.png'">
+      <p>Scan with any UPI app and pay <b id="qrAmt"></b>.</p>
+    </div>
+    <p id="noDue" class="ok" hidden>No rent is pending. Thank you!</p>
+  </div>
+</section>
+</main>
+
+<footer>
+  <p><b>Shreeji Girls PG</b>, Thaltej, Ahmedabad</p>
+</footer>
+
+<div class="lightbox" id="lb" hidden><button aria-label="Close">&times;</button><img alt=""></div>
+
+<script src="js/data.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
