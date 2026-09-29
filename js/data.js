@@ -2,8 +2,8 @@ const APPLICANTS = {
   "SGP1001": { name: "Riya Patel",    dob: "2003-05-14", rentPending: 6500 },
   "SGP1002": { name: "Krisha Shah",   dob: "2002-11-02", rentPending: 0 },
   "SGP1003": { name: "Hetvi Desai",   dob: "2001-08-27", rentPending: 13000 },
-  //"SGP6905JANKI": { name: "Janki Sharma",   dob: "2005-09-06", rentPending: 18000 }
-  "SGP6905JANKI": { name: "Janki Sharma",   dob: "2005-09-06", rentPending: 0 }
+  "SGP6905JANKI": { name: "Janki Sharma",   dob: "2005-09-06", rentPending: 18000 }
+  //"SGP6905JANKI": { name: "Janki Sharma",   dob: "2005-09-06", rentPending: 0 }
 };
 
 // Gallery images (put files inside the images/ folder). 5 to 10 photos.
